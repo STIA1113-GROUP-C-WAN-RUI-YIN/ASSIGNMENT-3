@@ -111,24 +111,45 @@ public class WatchesAssignment3 {
 		rmr=10*weight+6.25*height-5*age+5; //rmr for male
 	//TotalDailyEnergyExpenditure(TDEE)
 		double tdee = rmr * activity;
-        System.out.println( name + ", your RestingMetaboliCRate (RMR) is " + rmr + "kcal/day.");
-        System.out.println( name + ", your TotalDailyEnergyExpenditure (TDEE) is " + tdee + " kccal/day.");
+		System.out.print(name + ", your Resting Metabolic Rate (RMR) is ");
+        System.out.printf("%.2f",rmr); 
+        System.out.print(" kcal/day.");
+        System.out.println();
+        System.out.print( name + ", your Total Daily Energy Expenditure (TDEE) is ");
+        System.out.printf("%.2f",tdee );
+        System.out.print(" cal/day.");
+        System.out.println();
  
 //PART 3
-        System.out.println("Are you trying to lose wieght?");
+        System.out.println("Are you trying to lose weight?");
         System.out.println("Please enter 1 for losing weight, 2 for maintaining weight and 3 for gaining weight.");
         int lose = scan.nextInt(); 
         double tdee2       = tdee *0.8; //Losing weight should have 10%-20% deficit in calories from tdee per day
         double tdee3       = tdee *1.2; //Gaining weight should have 10%-20% surplus in calories from tdee per day
         double tdee4       = tdee *0.2; //Can be surplus or deficit based on weight maintainence
         double maxCalories = rmr *2.5;
-        if (lose == 1)
-        	System.out.println("You are losing weight. You should have " + tdee2 + " kcal/day.");
-        else if(lose == 2)	
-        	System.out.println("You are maintain weight. You should have " + tdee +" kcal/day.");
-        else if(lose == 3)
-        	System.out.println("You are gaining weight. You should have " + tdee3 + " kcal/day.");
-        System.out.println("Recommended goal : more than " + tdee4);
+        if (lose == 1) {
+        	System.out.print("You are losing weight. You should have " );
+            System.out.printf("%.2f",tdee2 );
+            System.out.print(" kcal/day.");
+            System.out.println();
+        }
+        else if(lose == 2) {	
+        	System.out.print("You are maintain weight. You should have " );
+        	System.out.printf("%.2f",tdee );
+        	System.out.print(" kcal/day.");
+            System.out.println();
+        }
+        else if(lose == 3) {
+        	System.out.print("You are gaining weight. You should have ");
+        	System.out.printf("%.2f",tdee3 );
+        	  System.out.print(" kcal/day.");
+            System.out.println();
+        }
+        System.out.print("Recommended goal : more than ");
+        System.out.printf("%.2f",tdee4 );
+        System.out.print(" kcal/day.");
+        System.out.println();
 //PART 4	
 	//amount of calories user wanted to burn daily
     double goal=0;
@@ -256,7 +277,7 @@ public class WatchesAssignment3 {
 	    }
 	
 	    if(i==1) {
-			System.out.println("Oops, you lost. Nevermind, good luck next time.");
+			System.out.println("Oops, you lost. The X is " + number +". Nevermind, good luck next time.");
 			price = 160*0.8;
 		    discount = 160*0.2;
 		    discountRate =20.00;
@@ -294,7 +315,7 @@ public class WatchesAssignment3 {
 			      System.out.println("Too low");
 			    }
 			    if(j==1) {
-					System.out.println("Oops, you lost. Nevermind, good luck next time.");
+					System.out.println("Oops, you lost. The X is " + number + ". Nevermind, good luck next time.");
 					price = 150*0.95;
 				    discount = 150*0.05;
 				    discountRate = 5.00;  
