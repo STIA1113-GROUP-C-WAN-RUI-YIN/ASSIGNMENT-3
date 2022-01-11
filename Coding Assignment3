@@ -56,23 +56,13 @@ public class WatchesAssignment3 {
 				            + "obesity and atherosclerosis. ");
 		System.out.println();
 		System.out.println("Are you interested in our TS-1 ?");
-		System.out.println("Please enter 1 for updating pogram. Please enter 2 for other service.");
+		System.out.println("Please enter 1 for updating pogram.");
 	    service = scan.nextInt();
-		while(service == 2) {
-			System.out.println("TS is still trying hard to provide better service. See you next time");
-			System.out.println("Please enter 1 for updating pogram. ");
-		    service = scan.nextInt();
-		}
-	    System.out.println("Updating .... Please wait");
+		System.out.println("Updating .... Please wait");
 		System.out.println();
 		System.out.println("Update suceeded. You are directed to the trial now.");
 		System.out.println("Please enter any integer to continue.");
 		proceed = scan.nextInt();
-		System.out.println();
-		
-		System.out.println("Updating .... Please wait");
-		System.out.println();
-		System.out.println("Update suceeded. You are directed to the trial now.");
 		System.out.println();
 		}
 	
@@ -227,6 +217,8 @@ public class WatchesAssignment3 {
 	double price=0;
 	double discount=0;
 	double discountRate=0;
+	int warranty = 0;
+	String warrantyCode = null;
 	System.out.println("The fees for updating the pogram is RM 150.");
 	System.out.println("Since we are having grand opening today, we have some promotion for you.");
 	System.out.println("We will have a mini game later on and this will be the discount rate.");
@@ -273,9 +265,8 @@ public class WatchesAssignment3 {
 	    }else if( guess > number) {
 	    System.out.println("Too high");
 	    }else if( guess < number) {
-	      System.out.println("Too low");     
+	     System.out.println("Too low");     
 	    }
-	
 	    if(i==1) {
 			System.out.println("Oops, you lost. The X is " + number +". Nevermind, good luck next time.");
 			price = 160*0.8;
@@ -337,13 +328,15 @@ public class WatchesAssignment3 {
 	System.out.println(". " );
 	System.out.println();
 	if (member==1) {
-	    System.out.println("Besides, you will have 1-year warranty for your program. " );	
-	    System.out.println("Your warranty code will be TS-100098." );
+		warranty = 12;
+		warrantyCode = "TS-100098";
 	 }
 	 else {
-		System.out.println("Besides, you will have 6-month warranty for your program. " );	
-		System.out.println("Your warranty code will be TS-100097." );
+		 warranty = 6;
+		 warrantyCode = "TS-100097";
 	}
+	System.out.println("Besides, you will have "+ warranty +"-month warranty for your program. " );	
+	System.out.println("Your warranty code will be " + warrantyCode +"." );	
 	System.out.println();
 	
 //PAYMENT USING CASH OR CARD
@@ -352,7 +345,7 @@ public class WatchesAssignment3 {
 	double change = 0;
 	System.out.println("Do you want to pay by cash or by card? Please enter 1 for cash and 2 for card.");
 	pay = scan.nextInt();
-	while(pay!=1) {
+	if(pay==2) {
 		int password, password1;
 		int k;
 		System.out.println("Please enter your numerical password. ");
@@ -386,7 +379,7 @@ public class WatchesAssignment3 {
 			
 		}
 		
-		break;	}
+	}
 	if(pay==1) {
 		System.out.print("The final price you should pay is RM " );	
 		System.out.printf("%.2f",price);	
@@ -472,7 +465,7 @@ public class WatchesAssignment3 {
 	System.out.println();
 	System.out.println();
 	System.out.println("*********************************************");
-	System.out.println("WARRANTY CODE   :               TS100098");
+	System.out.println("WARRANTY CODE   :               " + warrantyCode);
 	System.out.println("*********************************************");
 	System.out.println("                  Thank You!");
 	System.out.println("              Please come again!");
