@@ -24,7 +24,7 @@ daily goal. Besides, you will have an idea about the duration you still need to 
 stay away from health problems such as high blood pressure, obesity and atherosclerosis. 
 
 Are you interested in our TS-1 ?
-Please enter 1 for updating pogram. Please enter 2 for other service.
+Please enter 1 for updating pogram.
 1
 Updating .... Please wait
 
@@ -32,19 +32,15 @@ Update suceeded. You are directed to the trial now.
 Please enter any integer to continue.
 1
 
-Updating .... Please wait
-
-Update suceeded. You are directed to the trial now.
-
 Dear user, what is your name? 
-WAN
-Hi WAN, what is you age?
+wan
+Hi wan, what is you age?
 21
-Hi WAN, what is you gender? Please enter 1 for female and 2 for male.
+Hi wan, what is you gender? Please enter 1 for female and 2 for male.
 1
-Hi WAN, what is you weight in kg?
+Hi wan, what is you weight in kg?
 43
-Hi WAN, what is you height in cm?
+Hi wan, what is you height in cm?
 163
   ACTIVITY LEVEL	  
   1.2	 sedentary         (little to no exercise)
@@ -52,16 +48,16 @@ Hi WAN, what is you height in cm?
   1.55	 moderately active (moderate exercise 3–5 days per week)
   1.725	 very active       (hard exercise 6–7 days per week)
   1.9	 extra active      (very hard exercise or training or a physical job)  
-Hi WAN, what is your activity level?
+Hi wan, what is your activity level?
 1.2
-WAN, your Resting Metabolic Rate (RMR) is 1182.75 kcal/day.
-WAN, your Total Daily Energy Expenditure (TDEE) is 1419.30 cal/day.
+wan, your Resting Metabolic Rate (RMR) is 1182.75 kcal/day.
+wan, your Total Daily Energy Expenditure (TDEE) is 1419.30 cal/day.
 Are you trying to lose weight?
 Please enter 1 for losing weight, 2 for maintaining weight and 3 for gaining weight.
 2
 You are maintain weight. You should have 1419.30 kcal/day.
 Recommended goal : more than 283.86 kcal/day.
-Hi WAN, please enter your goal to burn calories today. 
+Hi wan, please enter your goal to burn calories today. 
 300
 Please enter the distance traveled today in metres.
 200
@@ -74,10 +70,10 @@ Your speed now is 20.0 m/min.
 By exercising at speed 20.0 m/min for 10.0 minutes, you can burn 25.00 calories. 
 
 You need to burn 275.00 more calories in order to achieve your daily goal.
-WAN, keep going!
+wan, keep going!
 
 You just need to exercise 110.0 minutes more to achieve your goal.
-WAN, keep it up! 
+wan, keep it up! 
 
 Trial completed.
 Details successfully updated.
@@ -109,30 +105,38 @@ Are you ready? The game starts now. Please enter 1 to continue.
 You have 5 chance(s) from now.     
 Please enter a random number from 1-50.     
 30
-Too low
+Too high
 You have 4 chance(s) from now.     
 Please enter a random number from 1-50.     
-40
-Too high
+20
+Too low
 You have 3 chance(s) from now.     
 Please enter a random number from 1-50.     
-37
+36
+Too high
+You have 2 chance(s) from now.     
+Please enter a random number from 1-50.     
+25
+Too high
+You have 1 chance(s) from now.     
+Please enter a random number from 1-50.     
+23
 Congratulations! You win the game.
 
 You have recieved discount at  30.0 %.
 Your discount price will be at RM  48.00. 
 Your final price will be at    RM 112.00. 
 
-Besides, you will have 1-year warranty for your program. 
+Besides, you will have 12-month warranty for your program. 
 Your warranty code will be TS-100098.
 
 Do you want to pay by cash or by card? Please enter 1 for cash and 2 for card.
 1
 The final price you should pay is RM 112.00. 
 Please enter the amount you want to pay.
-231
-The price you paid is RM231.00. 
-Thank you. This is your change RM 119.00. 
+130
+The price you paid is RM130.00. 
+Thank you. This is your change RM 18.00. 
 
 Here's a voucher for you.
   ======================================  
@@ -174,13 +178,13 @@ Discount rate, %:                    30.00
 Discount price  :              RM    48.00
 Final price     :              RM   112.00
 _____________________________________________
-Amount paid     :              RM   231.00
-Change          :              RM    119.00
+Amount paid     :              RM   130.00
+Change          :              RM    18.00
 
 
 
 *********************************************
-WARRANTY CODE   :               TS100098
+WARRANTY CODE   :               TS-100098
 *********************************************
                   Thank You!
               Please come again!
